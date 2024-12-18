@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-items</title>
+</head>
+<style>
+    .flex-items{
+        background-color: blue;
+        display: flex;
+        align-items: stretch;
+        
+    }
+    .flex-items > div{
+        background-color: #ccc;
+        color: rgb(20, 3, 3);
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+</style>
+<body>
+    <!--order=>change the order of the flex items-->
+    <div class="flex-items">
+        <div style="order: 3;">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 0;">4</div>
+        <div style="order: 1;">5</div>
+    </div>
+    <!--flex-grow =>how much a flex item will grow relative to the rest of the flex items-->
+    <div class="flex-items">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 3;">2</div>
+        <div style="flex-grow: 1;">3</div>
+        <div style="flex-grow: 1;">4</div>
+        <div style="flex-grow: 1;">5</div>
+    </div>
+    <!--flex-shrink=> how much a flex item will shrink relative to the rest of the flex items-->
+    <!-- flex-shrink:1 (default) width change in responsive-->
+    <div class="flex-items">
+        <div>1</div>
+        <div style="flex-shrink:0;">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <!--flex-basis =>specifies the initial length of a flex item-->
+    <div class="flex-items">
+        <div>1</div>
+        <div style="flex-basis: 200px;">2</div>
+        <div style="flex-basis: 230px;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div> 
+    <!--flex=  shorthand property for the flex-grow  flex-shrink flex-basis-->
+    <div class="flex-items">
+        <div style="flex:1  0 300px">1</div>
+        <div style="flex:2  1 200px">2</div>
+        <div style="flex:0  0 200px">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <!--align-self-->
+    <div class="flex-items" style="height: 300px;">
+        <div>1</div>
+        <div style="align-self: center;">2</div>
+        <div style="align-self: flex-end;">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div style="align-self: flex-start;">6</div>
+    </div>
+</body>
+</html>

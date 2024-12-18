@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aligns</title>
+    <style>
+        .center{
+          display: flex;
+          height: 150px;
+          width: 500px;
+          align-items: center;
+          background-color: DodgerBlue;
+        }
+        .center > div {
+          background-color: #f1f1f1;
+          width: 80px;
+          margin: 10px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 30px;
+        }
+        .start{
+          display: flex;
+          height: 150px;
+          width: 500px;
+          align-items: flex-start;
+                  background-color: DodgerBlue;
+        }
+        .start > div {
+          background-color: #f1f1f1;
+          width: 80px;
+          margin: 10px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 30px;
+        }
+        .end{
+          display: flex;
+          height: 150px;
+          width: 500px;
+          align-items: flex-end;
+          background-color: DodgerBlue;
+        }
+        .end > div {
+          background-color: #f1f1f1;
+          width: 80px;
+          margin: 10px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 30px;
+        }
+        .stretch{
+          display: flex;
+          height: 150px;
+          width: 500px;
+          align-items: stretch;
+          background-color: DodgerBlue;
+        }
+        .stretch > div {
+          background-color: #f1f1f1;
+          width: 80px;
+          margin: 10px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+    <h1>The align-items Property</h1>
+
+<p>align-items: center=>aligns the flex items in the middle of the container:</p>
+
+<div class="center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+<p>align-items: flex-start=> value positions the flex items at the top of the container</p>
+
+<div class="start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+<p>align-items: end=>aligns the flex items in the end of the container:</p>
+
+<div class="end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+<p>align-items: stretch=>alue stretches the flex items to fill the container (this is equal to "normal" which is default)</p>
+
+<div class="stretch">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+    
+</body>
+</html>

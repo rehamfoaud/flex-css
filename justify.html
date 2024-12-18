@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+          display: flex;
+          justify-content: center;
+          background-color: DodgerBlue;
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .start{
+            display: flex;
+            justify-content: flex-start;
+            background-color: blue;
+        }
+        .start > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .end{
+            display: flex;
+            justify-content: flex-end;
+            background-color: blue;
+        }
+        .end > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .space-around{
+            display: flex;
+            justify-content: space-around;
+            background-color: blue;
+        }
+        .space-around > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .space-between{
+            display: flex;
+            justify-content:space-between;
+            background-color: blue;
+        }
+        .space-between > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .space-evenly{
+            display: flex;
+            justify-content:space-evenly;
+            background-color: blue;
+        }
+        .space-evenly > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>The justify-content Property</h1>
+        
+        <p>justify-content: center; aligns the flex items at the center of the container:</p>
+        
+        <div class="flex-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+        <!---->
+        <p>justify-content: flex-start=>value positions the flex items at the beginning of the container (this is default):</p>
+        
+        <div class="start">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+        <p>justify-content: flex-end=>value positions the flex items at the end of the container</p>
+        
+        <div class="end">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+        <p>justify-content: space-around =>value displays the flex items with space around them:</p>
+        
+        <div class=" space-around">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+        <p>justify-content: space-between => displays the flex items with space between them:</p>
+        
+        <div class=" space-between">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+        <p>justify-content: space-evenly => space-evenly value displays the flex items with equal space around them</p>
+        
+        <div class=" space-evenly">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+        </div>
+</html>
